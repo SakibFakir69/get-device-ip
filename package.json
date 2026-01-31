@@ -1,6 +1,6 @@
 {
   "name": "get-device-ip",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight utility to get local IPv4 and IPv6 addresses.",
   "main": "./dist/script.cjs",
   "module": "./dist/script.js",
