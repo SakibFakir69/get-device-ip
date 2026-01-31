@@ -1,6 +1,6 @@
 {
   "name": "get-device-ip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight utility to get local IPv4 and IPv6 addresses.",
   "main": "./dist/script.cjs",
   "module": "./dist/script.js",
@@ -11,9 +11,9 @@
     }
   },
   "scripts": {
-    "build": "tsup script.js --format cjs,esm --clean",
-    "prepublishOnly": "npm run build"
-  },
+  "build": "tsup script.js --format cjs,esm --clean --dts --minify --no-splitting --cjsInterop",
+  "prepublishOnly": "npm run build"
+},
   "author": "Sakib Fakir",
   "license": "MIT",
   "engines": {

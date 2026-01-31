@@ -1,4 +1,5 @@
 import os from 'os';
+
 // Sakib Fakir
 // published : 1/31/2026
 
@@ -39,7 +40,6 @@ const getDeviceIP = () => {
      
         return { error: error.message, IPv4: [], IPv6: [] };
     }
-}
+};
 
-export { getDeviceIP };
-export default getDeviceIP;
+export { getDeviceIP as default, getDeviceIP };
