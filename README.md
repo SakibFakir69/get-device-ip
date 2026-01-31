@@ -23,13 +23,14 @@ npm install get-device-ip
 You can now use this package in any Node.js project without extra configuration.
 
 Modern (ES Modules)
-import getDeviceIP from 'get-device-ip';
+import { getDeviceIP } from 'get-device-ip';
 
 const ip = getDeviceIP();
 console.log('Primary IPv4:', ip.primaryIpv4);
+console.log('All IPv4s:', ip.IPv4);
 
 Legacy (CommonJS)
-const getDeviceIP = require('get-device-ip');
+const { getDeviceIP } = require('get-device-ip');
 
 const ip = getDeviceIP();
 console.log('Primary IPv4:', ip.primaryIpv4);
