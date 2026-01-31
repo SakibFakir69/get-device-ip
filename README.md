@@ -38,13 +38,14 @@ console.log('Primary IPv4:', ip.primaryIpv4);
 
 ```
 📊 Return Object Structure
-Calling getDeviceIP() returns a clean object:
 
-Property,Type,Description
-primaryIpv4,string,The first active local IPv4 address found.
-primaryIpv6,string,The first active local IPv6 address found.
-IPv4,string[],Array of all detected IPv4 addresses.
-IPv6,string[],Array of all detected IPv6 addresses.
+{
+  IPv4: [ '192.168.0.100', '172.23.160.1' ],
+  IPv6: [ 'fe80::2ecc:c31a:a1fc:dcf0' ],
+  primaryIpv4: '192.168.0.100',
+  primaryIpv6: 'fe80::2ecc:c31a:a1fc:dcf0'
+}
+
 
 ```
 
